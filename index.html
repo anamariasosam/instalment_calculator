@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cuotas</title>
+  </head>
+  <body>
+    <form>
+      <input type="number" id="cuotaInicial" value="500000" required min="100000">
+
+      <select id="numeroCuotas">
+        <option value=3>3</option>
+        <option value=6>6</option>
+        <option value=10>10</option>
+        <option value=12>12</option>
+        <option value=15>15</option>
+        <option value=18>18</option>
+        <option value=20>20</option>
+        <option value=24>24</option>
+        <option value=30>30</option>
+        <option value=36>36</option>
+      </select>
+      <input type="submit" value="Simular">
+    </form>
+    <p>Saldo a financiar: <span id="prestamo"></span> </p>
+    <p>Cuotas Mensuales de: <span id="cuotaMensual"></span> </p>
+    <p>Ahorro diario de: <span id="ahorroDiario"></span> </p>
+
+    <script type="text/javascript" src="simulador.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
